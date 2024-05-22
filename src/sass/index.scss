@@ -1,7 +1,9 @@
 @import './common';
-@import './header';
-@import './about';
-@import './store';
-@import './delivery';
-@import './blog';
-@import './footer';
+@import './base/colors';
+@import './base/all-styles';
+@import './components/header';
+@import './components/about';
+@import './components/store';
+@import './components/delivery';
+@import './components/blog';
+@import './components/footer';
