@@ -1,3 +1,131 @@
 header{
-    background-color: antiquewhite;
+    background-color: $regular-background-color;
+    padding-top: 16px;
+    padding-bottom: 100px;
+    display: flex;
+    
+}
+
+.header__nav-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-list{
+    display: none;
+}
+
+.header__contacts-list{
+    display: flex;
+    gap: 14px;
+}
+
+.header__contacts-button{
+    border: none;
+    background-color: transparent;
+}
+
+.header__main-wrap{
+    display: block;
+}
+
+.header__main-box{
+    display: flex;
+    justify-content: center;
+}
+
+.header__main-name{
+    padding-left: 11px;
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.header__main-img{
+    margin-right: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header__main-btn-wrap{
+    display: flex;
+    align-items: center;
+}
+
+.header__title{
+    
+    margin-top: -30px;
+    font-weight: 400;
+    font-size: 52px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    position: relative;
+}
+
+
+.header__main-btn{
+    border: none;
+    background-color: transparent;
+    display: block;
+}
+
+.header__btn-img{
+    width: 76px;
+    height: 76px;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .header__nav-list{
+    display: flex;
+    gap: 24px;
+}
+
+    .header__nav-link{
+    font-weight: 400;
+    font-size: 20px;
+    color: $text-color;
+    }
+
+    .header__contacts-item:nth-child(1){
+        display: none;
+    }
+
+    .header__main-name{
+        
+        font-size: 24px;
+        margin-right: 40px;
+        margin-left: 20px;
+    }
+
+    .header__main-img{
+        margin-right: 10px;
+    }
+
+    .header__title{
+        margin-top: -50px;
+        
+        font-size: 120px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .header__main-name{
+        
+        font-size: 32px;
+    }
+
+    .header__title{
+        margin-top: -90px;
+        font-size: 160px;
+        text-align: center;
+    }
 }

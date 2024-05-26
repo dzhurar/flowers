@@ -3,7 +3,11 @@
         <div class="header__nav-wrap">
             <div class="header__logo-wrap">
                 <a href="./index.html" class="header__logo-link">
-                    
+                    <picture>
+                        <source srcset="./images/mobile/mobile-header-logo.png 1x, ./images/mobile/mobile-header-logo@2x.png 2x" media="(max-width: 767px)">
+                        <source srcset="./images/desktop/desktop-header-logo.png 1x, ./images/desktop/desktop-header-logo@2x.png 2x" media="(max-width: 1600px)">
+                        <img src="./images/desktop/desktop-header-logo.png" alt="logo">
+                    </picture>              
                 </a>
             </div>
 
@@ -29,32 +33,39 @@
 
             <ul class="header__contacts-list">
                 <li class="header__contacts-item">
-                    <button class="header__contacts-button"></button>
+                    <button class="header__contacts-button">m</button>
                 </li>
                 <li class="header__contacts-item">
-                    <button class="header__contacts-button"></button>
+                    <button class="header__contacts-button">t</button>
                 </li>
             </ul>
         </div>
         <div class="header__main-wrap">
+            <div class="header__main-box">
             <h2 class="header__main-name">
                 flower <br>
                 studio
             </h2>
-            
-            <picture>
+
+            <picture class="header__main-img">
                 <source srcset="./images/mobile/mobile-header-background-1x.png 1x, ./images/mobile/mobile-header-background-2x.png 2x" media="(max-width: 767px)">
                 <source srcset="./images/tablet/tablet-header-background-1x.png 1x, ./images/tablet/tabletheader-background-2x.png 2x" media="(max-width: 1199px)">
                 <source srcset="./images/desktop/desktop-header-background-1x.png 1x, ./images/desktop/desktop-header-background-2x.png 2x" media="(max-width: 1600px)">
-                <img src="./images/desktop/desktop-header-background-1x.png" alt="main-image" class="header__main-img">
+                <img src="./images/desktop/desktop-header-background-1x.png" alt="main-image">
             </picture>
-            
-
             <div class="header__main-btn-wrap">
                 <button class="header__main-btn" type="button">
-                    <img class="header__btn-img" src="./index.html" alt="button">
+                    <picture class="header__btn-img">
+                        <source srcset="./images/mobile/mobile-header-btn.png 1x, ./images/mobile/mobile-header-btn@2x.png 2x" media="(max-width: 767px)">
+                        <source srcset="./images/tablet/tablet-header-btn.png 1x, ./images/tablet/tablet-header-btn@2x.png 2x" media="(max-width: 1199px)">
+                        <source srcset="./images/desktop/desktop-header-btn.png 1x, ./images/desktop/desktop-header-btn@2x.png 2x" media="(max-width: 1600px)">
+                        <img src="./images/desktop/desktop-header-btn.png" alt="btn-image">
+                    </picture>
                 </button>
             </div>
+            </div>
+
+            <h1 class="header__title">ANEMONE</h1>
 
         </div>
     </div>
