@@ -7,6 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
     gap: 32px;
 }
 .footer__positioning-item{
@@ -15,8 +16,9 @@
 .footer__positioning-item:nth-child(1){
     display: none;
 }
-.footer__logo{
-
+.footer__positioning-item:nth-child(5){
+    display: flex;
+    gap: 14px;
 }
 .footer__positioning-title{
     font-family: "Inter", sans-serif;
@@ -67,9 +69,25 @@
 
 
 
+@media screen and (min-width: 768px){
+    .footer{
+        padding-top: 60px;
+        padding-bottom: 55px;
+    }
+    .footer__positioning-item:nth-child(5){
+        flex-direction: column;
+    }
+}
+
+
+
 
 @media screen and (min-width: 1200px){
     .footer__positioning-item:nth-child(1){
         display: block;
+    }
+    .footer__logo{
+        width: 73px;
+        height: 57px;
     }
 }
