@@ -25,10 +25,6 @@ header{
     background-color: transparent;
 }
 
-.header__main-wrap{
-    display: block;
-}
-
 .header__main-box{
     display: flex;
     justify-content: center;
@@ -80,12 +76,15 @@ header{
     height: 76px;
 }
 
-
+.header__main-wrap{
+    padding-top: 38px;
+}
 
 @media screen and (min-width: 768px){
     .header__nav-list{
     display: flex;
     gap: 24px;
+    align-items: center;
 }
 
     .header__nav-link{
