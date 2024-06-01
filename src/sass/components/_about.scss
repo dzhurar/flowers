@@ -5,22 +5,66 @@
 .about__title{
     color: black;
     font-family: "Montserrat";
-    font-size: 24px;
     font-weight: 700;
-    line-height: 29.26px;
     text-align: left;
 }
 .about__text{
     font-family: "Montserrat";
-    font-size: 16px;
     font-weight: 400;
-    line-height: 19.5px;
     text-align: left;
-    padding: 32px 16px 16px 16px;
     
-
 }
 .about__line{
-    width: 183px;
-    background-color: black
+    background-color: black;
+    height:1px; 
+}
+.about__div-line{
+    display: flex;
+}
+@media screen and (min-width: 480px){
+    .about__title{
+        font-size: 24px;
+        line-height: 29.26px;
+    }
+    .about__line{
+        margin-top: 14px;
+        margin-left: 14px;
+        width: 183px;
+    }
+    .about__text{
+        font-size: 16px;
+        line-height: 19.5px;
+        padding: 32px 16px 16px 16px;
+    }
+}
+@media screen and (min-width: 768px){
+    .about{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .about__img-flex{
+        display: flex;
+    }
+    .about__title{
+        font-size: 44px;
+        line-height: 53.64px;
+    }
+    .about__line{
+        margin-top: 28px;
+        margin-left: 16px;
+        width: 538px;
+    }
+    .about__text{
+        font-size: 20px;
+        line-height: 24.38px;
+        padding: 56px 54px 23px 24px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .about__text{
+        padding: 120px 90px 115px 24px;
+    }
+    .about__line{
+        width: 1050px;
+    }
 }
