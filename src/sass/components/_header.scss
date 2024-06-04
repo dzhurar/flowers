@@ -9,13 +9,15 @@ header{
 .header__nav-wrap{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
 }
 
 .header__nav-list{
     display: none;
 }
 
-.header__contacts-list{
+.header__contacts-box{
     display: flex;
     gap: 14px;
 }
@@ -64,7 +66,7 @@ header{
     text-align: center;
     display: flex;
     justify-content: center;
-    z-index: 999;
+    z-index: 99;
     position: relative;
 }
 
@@ -73,19 +75,123 @@ header{
     border: none;
     background-color: transparent;
     display: block;
+    
 }
 
 .header__btn-img{
     width: 76px;
     height: 76px;
+    animation-name: header-btn-rotate;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+	
 }
 
+@keyframes header-btn-rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.mobile__menu-btn {
+        display: block;
+        height: 30px;
+        width: 30px;
+        margin-left: auto;
+        position: relative;
+    }
+
+    .mobile__menu-btn:hover {
+        cursor: pointer;
+    }
+
+    .mobile__menu-btn .mobile__menu-btn-icon {
+        top: 15px;
+    }
+
+    .mobile__menu-btn .mobile__menu-btn-icon,
+    .mobile__menu-btn .mobile__menu-btn-icon::before,
+    .mobile__menu-btn .mobile__menu-btn-icon::after {
+        content: '';
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: $footer-background-color;
+        position: absolute;
+        z-index: 999;
+        right: 0;
+        transition: .3s;
+    }
+
+    .mobile__menu-btn .mobile__menu-btn-icon::before {
+        top: -8px;
+        width: 22px;
+    }
+
+    .mobile__menu-btn .mobile__menu-btn-icon::after {
+        top: 8px;
+        width: 22px;
+    }   
+
+    .mobile__menu-input{
+        display: none;
+    }
+
+    .mobile__menu-input[type="checkbox"]:checked~.mobile__menu-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile__menu-input[type="checkbox"]:checked~.mobile__menu-btn .mobile__menu-btn-icon {
+        transform: rotate(-45deg);
+        background: $regular-background-color;
+    }
+
+    .mobile__menu-input[type="checkbox"]:checked~.mobile__menu-btn .mobile__menu-btn-icon::before {
+        top: 0;
+        transform: rotate(0);
+        background: $regular-background-color;
+    }
+
+    .mobile__menu-input[type="checkbox"]:checked~.mobile__menu-btn .mobile__menu-btn-icon::after {
+        top: 0;
+        transform: rotate(90deg);
+        background: $regular-background-color;
+    }    
+
+    .mobile__menu-nav{
+        justify-content: center;
+        align-items: center;
+        gap: 26px;   
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $button-backround-color;
+        display: none;
+        z-index: 998;
+    }
+
+    .mobile__menu-nav-link{
+        font-weight: 400;
+        font-size: 20px;
+        color: $footer-text-color;
+    }
+
+
+    
 
 
 @media screen and (min-width: 768px){
     .header__nav-list{
     display: flex;
-    gap: 24px;
+    gap: 24px;    
 }
 
     .header__nav-link{
@@ -94,8 +200,9 @@ header{
     color: $text-color;
     }
 
-    .header__contacts-item:nth-child(1){
+    .header__contacts-item:nth-child(2){
         display: none;
+        
     }
 
     .header__main-name{

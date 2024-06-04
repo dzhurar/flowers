@@ -31,14 +31,31 @@
                 </ul>
             </nav>
 
-            <ul class="header__contacts-list">
-                <li class="header__contacts-item">
-                    <button class="header__contacts-button">m</button>
-                </li>
-                <li class="header__contacts-item">
-                    <button class="header__contacts-button">t</button>
-                </li>
-            </ul>
+            <div class="header__contacts-box">
+                <div>
+                    <button>
+                        <svg>
+                            <use href="./images/svg/symbol-defs.svg#icon-tel"></use>
+                        </svg>
+                    </button>
+                </div>
+                
+
+                <div class="header__contacts-item">
+                    <input class="mobile__menu-input" type="checkbox" id="toggle">
+                    <label class="mobile__menu-btn" for="toggle">
+                        <span class="mobile__menu-btn-icon"></span>
+                    </label>
+                    <ul class="mobile__menu-nav">
+                        <li class="mobile__menu-nav-item"><a href="./index.html" class="mobile__menu-nav-link">Anemone</a></li>
+                        <li class="mobile__menu-nav-item"><a href="./partials/about.html" class="mobile__menu-nav-link">About us</a></li>
+                        <li class="mobile__menu-nav-item"><a href="./partials/store.html" class="mobile__menu-nav-link">Store</a></li>
+                        <li class="mobile__menu-nav-item"><a href="./partials/delivery.html" class="mobile__menu-nav-link">Delivery</a></li>
+                        <li class="mobile__menu-nav-item"><a href="./partials/blog.html" class="mobile__menu-nav-link">Blog</a></li>
+                    </ul>
+                    </div>
+                
+            </div>
         </div>
         <div class="header__main-wrap">
             <div class="header__main-box">
@@ -59,14 +76,14 @@
                         <source srcset="./images/mobile/mobile-header-btn.png 1x, ./images/mobile/mobile-header-btn@2x.png 2x" media="(max-width: 767px)">
                         <source srcset="./images/tablet/tablet-header-btn.png 1x, ./images/tablet/tablet-header-btn@2x.png 2x" media="(max-width: 1199px)">
                         <source srcset="./images/desktop/desktop-header-btn.png 1x, ./images/desktop/desktop-header-btn@2x.png 2x" media="(max-width: 1600px)">
-                        <img src="./images/desktop/desktop-header-btn.png" alt="btn-image">
+                        <img class="header__btn-img" src="./images/desktop/desktop-header-btn.png" alt="btn-image">
                     </picture>
                 </button>
             </div>
             </div>
 
             <h1 class="header__title">ANEMONE</h1>
-
         </div>
+
     </div>
 </header>
