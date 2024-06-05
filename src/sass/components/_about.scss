@@ -3,7 +3,7 @@
     padding-bottom: 60px;
 }
 .about__title{
-    color: black;
+    color: $text-color;
     font-family: "Montserrat";
     font-weight: 700;
     text-align: left;
@@ -15,11 +15,17 @@
     
 }
 .about__line{
-    background-color: black;
+    background-color: $text-color;
     height:1px; 
 }
 .about__div-line{
     display: flex;
+}
+.about__svg{
+    background-image: url(./../images/svg/flower.svg);
+    width: 50px;
+    height: 50px;
+    fill: $button-backround-color;
 }
 @media screen and (min-width: 480px){
     .about__title{
@@ -34,7 +40,8 @@
     .about__text{
         font-size: 16px;
         line-height: 19.5px;
-        padding: 32px 16px 16px 16px;
+        margin-top: 32px;
+        margin-bottom: 16px;
     }
 }
 @media screen and (min-width: 768px){
@@ -57,14 +64,17 @@
     .about__text{
         font-size: 20px;
         line-height: 24.38px;
-        padding: 56px 54px 23px 24px;
+        margin-top: 56px;
+        margin-bottom: 23px;
     }
 }
 @media screen and (min-width: 1200px){
     .about__text{
-        padding: 120px 90px 115px 24px;
+       margin-top: 120px; ;
+       margin-bottom: 115px ;
     }
     .about__line{
-        width: 1050px;
+        width: 1030px;
+        margin-right: 20px;
     }
 }
