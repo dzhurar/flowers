@@ -1,8 +1,25 @@
+.store__name{
+  font-weight: 700;
+  font-size: 24px;
+  color: $footer-background-color;
+}
+
+.store__name::after {
+  width: 68%;
+  height: 1px;
+  background-color: $text-color;
+  content: '';
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 16px;
+}
 .store__size{
     font-weight: 500;
     font-size: 16px;
     color: $footer-background-color;
 }
+
+
 
 .store__text{
     font-weight: 600;
@@ -11,6 +28,8 @@
 }
 
 .store__button{
+  display: flex;
+  justify-content: center;
     border-radius: 38px;
     padding: 14px 28px;
     width: 208px;
@@ -83,7 +102,15 @@
 }
 
 @media screen and (min-width: 768px){
+  .store__name{
+    font-weight: 700;
+    font-size: 44px;
+    color: $footer-background-color;
+    margin-bottom: 30px;
+  }
     .store__button{
+      display: flex;
+  justify-content: center;
         border-radius: 38px;
         padding: 16px 32px;
         width: 280px;
@@ -168,8 +195,37 @@
 }
 
 @media screen and (min-width: 1200px){
+
+  .store__name{
+    font-weight: 700;
+    font-size: 44px;
+    color: $footer-background-color;
+  }
+
+  .store__name::after{
+    width: 68%;
+    height: 1px;
+    background-color: $text-color;
+    content: '';
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 16px;
+  }
+  .store__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  .store__jump{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    margin-top: 40px;
+  }
     .store__button{
-     border-radius: 38px;
+    border-radius: 38px;
     padding: 16px 32px;
     width: 280px;
     height: 64px;
@@ -182,6 +238,13 @@
         font-size: 36px;
         color: $text-color;
     }
+    .store__size::after{
+      content: '';
+      width: 85%;
+      height: 2px;
+      margin-bottom: 15px;
+    
+    }
 
     .store__text{
         font-weight: 600;
@@ -191,7 +254,7 @@
 
     .store__img-one {
   background-image: url(./../images/desktop/desktop-bouquet-one-1x.png);
-  width: 550px;
+  width: 530px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -206,7 +269,7 @@
 
 .store__img-two {
   background-image: url(./../images/desktop/desktop-bouquet-two1x.png);
-  width: 550px;
+  width: 530px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -221,7 +284,7 @@
 
 .store__img-three {
   background-image: url(./../images/desktop/desktop-bouquet-three-1x.png);
-  width: 550px;
+  width: 530px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -236,7 +299,7 @@
 
 .store__img-four {
   background-image: url(./../images/desktop/desktop-bouquet-four-1x.png);
-  width: 550px;
+  width: 530px;
   background-size: contain;
   background-repeat: no-repeat;
 }
