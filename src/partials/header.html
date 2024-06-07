@@ -32,10 +32,10 @@
             </nav>
 
             <div class="header__contacts-box">
-                <div>
-                    <button>
-                        <svg>
-                            <use href="./images/svg/symbol-defs.svg#icon-tel"></use>
+                <div>                    
+                    <button data-modal-open class="header__modal-btn" type="button">
+                        <svg class="header__modal-open-icon">
+                            <use  href="./images/svg/symbol-defs.svg#icon-tel"></use>
                         </svg>
                     </button>
                 </div>
@@ -76,13 +76,43 @@
                         <source srcset="./images/mobile/mobile-header-btn.png 1x, ./images/mobile/mobile-header-btn@2x.png 2x" media="(max-width: 767px)">
                         <source srcset="./images/tablet/tablet-header-btn.png 1x, ./images/tablet/tablet-header-btn@2x.png 2x" media="(max-width: 1199px)">
                         <source srcset="./images/desktop/desktop-header-btn.png 1x, ./images/desktop/desktop-header-btn@2x.png 2x" media="(max-width: 1600px)">
-                        <img class="header__btn-img" src="./images/desktop/desktop-header-btn.png" alt="btn-image">
+                        <img class="header__btn-img-rotate" src="./images/desktop/desktop-header-btn.png" alt="btn-image">
                     </picture>
                 </button>
             </div>
             </div>
 
             <h1 class="header__title">ANEMONE</h1>
+        </div>
+
+
+        <div data-modal class="header__modal_backdrop is-hidden">
+            <div class="header__modal">
+        
+                <button data-modal-close class="header__modal_close" type="button">
+                    <span class="header__modal_close_icon"></span>
+                </button>
+                <h2 class="header__modal-title">Contact us</h2>
+                <p class="header__modal-text">
+                    If you have any additional questions or you want to clarify something before you make an order please fill in your
+                    contact details. We will call you back.
+                </p>
+
+                <form class="header__modal_form">                   
+
+                        <label class="modall__label">
+                            Name
+                            <input class="modall__input" type="text" placeholder="Name" required />
+                        </label>
+                        <label class="modall__label">
+                            Email
+                            <input class="modall__input" type="email" name="email" placeholder="Email" required />
+                        </label>
+                        
+                    
+                        <button class="header__modal-submit" type="submit">Send</button>
+                    </form>                
+            </div>
         </div>
 
     </div>
