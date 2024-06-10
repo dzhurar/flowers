@@ -232,13 +232,14 @@ header{
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.header__modal-btn{    
+.header__modal-btn{     
     margin-left: 310px;    
     width: 30px;
     height: 30px; 
     cursor: pointer;   
     display: flex;
     align-items: center;
+    
 }
 
 .header__modal-btn{
@@ -249,6 +250,9 @@ header{
 .header__modal_close{
     border: none;
     background-color: transparent;
+    position: relative;
+    left: 432px;
+    top: 15px;
 }
 
 
@@ -330,6 +334,10 @@ color: $footer-text-color;
     font-weight: 400;
     font-size: 20px;
     color: $text-color;
+        &:hover,
+        &:focus{
+            color: $button-backround-color;
+        }
     }
 
     .header__contacts-item:nth-child(2){
