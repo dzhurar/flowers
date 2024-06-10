@@ -1,0 +1,127 @@
+.delivery{
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+.delivery__div-line{
+    display: flex;
+    align-items: center;
+}
+.delivery__title{
+    color: $text-color;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: left;
+    font-size: 24px;
+}
+.delivery__item-div{
+    border-radius: 50%;
+    border: 1px solid black;
+    min-width: 40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    font-size: 20px;
+}
+.delivery__line{
+    background-color:$text-color ;
+    margin-left: 16px;
+    height: 1px;
+}
+.delivery__item{
+    display: flex;
+    margin-bottom: 14px;
+}
+.delivery__item-text{
+    font-family: "Montserrat";
+font-weight: 500;
+line-height: 17.07px;
+text-align: left;
+
+}
+.delivery__list{
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+.delivery__img{
+    background-image: url(./../images/desktop/desktop-delivery-img-1x.png);
+    height: 135px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (min-width: 480px){
+
+    .delivery__line{
+        width: 148px;
+       
+    }
+    .delivery__item-text{
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+    .delivery__list{
+        margin-top: 60px;
+        margin-bottom: 28px;
+    }
+    .delivery__item{
+        margin-bottom: 20px;
+    }
+    .delivery__line{
+        width: 437px;
+        
+    }
+    .delivery__item-text{
+        font-size: 24px;
+        line-height: 120%;
+    }
+    .delivery__item-div{
+      
+        min-width: 64px;
+        min-height:64px;
+        font-size: 26px;
+        
+        margin-right: 20px;
+    }
+    .delivery__img{
+       
+        height: 264px;
+        
+    }
+    .delivery__title{
+        font-size:44px ;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .delivery__list{
+        margin-top: 70px;
+        margin-bottom: 48px;
+    }
+    .delivery__line{ 
+        width: 985px;
+        
+    }
+    .delivery__item-text{
+        font-size:32px;
+        
+    }
+    .delivery__item-div{
+
+        margin-right: 56px;
+    }
+    .delivery__item{
+        margin-bottom: 32px
+    }
+    .delivery__img{
+       
+        height: 391px;
+        
+    }
+}
